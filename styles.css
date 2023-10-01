@@ -1,0 +1,174 @@
+/* variables */
+:root{
+    /* main colors */
+    --primary: #2F4172;
+    --secondary-1: #423075;
+    --secondary-2: #236267;
+
+    /* shades */
+    --primary-light: #4f608f;
+    --primary-lighter: #7986ac;
+    --secondary-1-dark: #3e3374;
+    --secondary-1-light: #625192;
+    --secondary-1-lighter: #897baf; 
+    --secondary-2-light: #417c81;
+    --secondary-2-lighter: #68979b;
+
+    /* store */
+    --store: #7cc214;
+    --store-light: #97d73a;
+    --store-disabled: #b4eb63;
+
+    /* black & white */
+    --black: #0e0e0e;
+    --black-light: #282828;
+    --grey: #d0d0d0;
+    --white: #f5f5f5;
+   
+    /* shadows */
+    --shadow: 2px 2px 4px var(--black-light);
+    --shadow-subtle: 1px 1px 4px var(--black-light);
+    --text-shadow: 1px 1px 4px var(--black-light); 
+    /* fonts */
+    /* como css no tiene soporte para fuentes en variables,
+       dejo aca para copiar y pegar segun la necesidad */
+    
+    /* paragraph & card title */
+    font-family: Montserrat, Arial, Helvetica, sans-serif; 
+    font-weight: medium;
+    font-size: 14;
+
+    /* h1 */
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20;
+    
+    /* h2 */
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20;
+
+}
+
+/* HTML elements */
+h1,h2{
+    color: var(--white);
+    text-shadow: var(--text-shadow); 
+}
+
+p{
+    font-family: Montserrat, Arial, Helvetica, sans-serif; 
+    font-weight: medium;
+    font-size: 14px;  
+    color: var(--white);
+}
+
+h1{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h2{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+body{
+    background-color: var(--primary);
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+nav{
+    background-color: var(--primary-light);
+    margin-left: 60px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+main{
+    margin-left: 60px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 2.5rem;
+}
+
+footer{
+    background-color: var(--primary-lighter);
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+aside{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow-x: hidden;
+    width: 60px;
+    background-color: var(--secondary-1);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+/* classes */
+.row{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 24px;
+    padding-bottom: 2.5rem;
+    flex: 1 1 0px;
+    border: 1px solid;
+    min-width: 0;
+}
+
+.card{
+    flex: 1;
+    flex-shrink: 0;
+    background-color: var(--secondary-2);
+    height: 200px;
+    width: 256px;
+    margin-left: 24px;
+    box-shadow: var(--shadow);
+    min-width: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 256px;
+}
+
+.image{
+    height: 116px;
+    width: 256px;
+    background-color: #0e0e0e;
+    padding: 0;
+    margin: 0;
+}
+
+.game-title{
+    padding-left: 14px;
+    padding-right: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.price-tag{
+    float: right;
+    padding-right: 8px;
+
+}
+.nav-item{
+
+}
+
+.sidebar-item{
+
+}
