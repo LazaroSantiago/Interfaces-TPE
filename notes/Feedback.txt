@@ -1,0 +1,9 @@
+Factorizar colores
+Muy pocos campos por tab
+Boton Send abajo
+
+Pelado:
+En el design system no hay 2 luces y 2 sombras. Revisar esta sección. 
+No estaba la sección de registro, como para navegar. Comenzaba en la página del home. Se puede observar que hay una parte de login/registro pero no es correcta. Los campos deberían estar en un mismo formulario ya que son pocos. Si son muchos pasos impacta en la experiencia de usuario.
+En la página de juego la puntuación es parte del formulario para comentar. En este caso las estrellas están debajo del botón de enviar comentario
+En la página de juego no está del todo bien la descripción del juego. Está mezclado con cómo se juega pero no hay un detalle como tal.
