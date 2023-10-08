@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Hako Games</title>
 </head>
 
@@ -21,14 +22,37 @@
             <img src="images\magnifying_glass.png" class="magnifying-glass"></img>
         </article>
 
-        <img src="images\carrito_usuario.png" class="cart"></img>
+        <img src="images\carrito_usuario.png" class="cart-button"></img>
         <img src="images\user_icon_logged_in.png" class="login"></img>
     </nav>
 
-    <aside class="sidebar">
-        <article class="sidebar-item">
-            <h1>a</h1>
-        </article>
+    <div class="cart-menu">
+        <section class="cart-info">
+            <div class="items-added">
+                <p>Your shopping cart:</p>
+                <p>2 items added</p>
+            </div>
+            <div class="checkout">
+                <h1>$20.0</h1>
+                <button class="checkout-button" type="button"><h1>GO TO CHECKOUT</h1></button>
+            </div>
+        </section>
+        <section class="cart">
+            <div class="cart-item">
+                <img class="cart-game-image" src="https://picsum.photos/200/60">
+                <p class="cart-game-title" >metal gear solid</p>
+                <p>$10.0</p>
+            </div>
+            <div class="cart-item">
+                <img class="cart-game-image" src="https://picsum.photos/200/60">
+                <p class="cart-game-title">metal gear solid</p>
+                <p>$10.0</p>
+            </div>
+        </section>
+    </div>
+
+    <aside class="sidebar invisible">
+
     </aside>
     
     <main class="row-container">
@@ -131,7 +155,48 @@
     </main>
     
     <footer>
-        
+        <div class="footer-columns">
+            <div class="footer-column">
+                <img class="logo" src="https://picsum.photos/150/150" alt="Logo">
+            </div>
+            
+            <div class="footer-column">
+                <h2>Hako Games</h2>
+                <p>About Hako Games</p>
+                <p>Company</p>
+                <p>Blog</p>
+                <p>Logo History</p>
+                <p>Contact Us</p>
+            </div>
+            
+            <div class="footer-column">
+                <h2>Support</h2>
+                <p>Product Support</p>
+                <p>Report Abuse</p>
+                <p>Community</p>
+                <p>Redeem Code</p>
+            </div>
+            
+            <div class="footer-column">
+                <h2>Privacy Police</h2>
+                <p>Terms of Use</p>
+                <p>Help</p>
+                <p>Email Enquiry</p>
+                <p>FAQ/Feedback</p>
+            </div>
+            
+            <div class="footer-column">
+                <h2>Community</h2>
+                <p>Community Central</p>
+                <p>Do Not Sell My Info</p>
+            </div>
+            
+            <div class="footer-column">
+                <h2>More</h2>
+                <p>Business</p>
+                <p>Advertise</p>
+            </div>
+        </div>
     </footer>
 
 </body>
