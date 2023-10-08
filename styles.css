@@ -321,9 +321,20 @@ footer{
     text-align: center;
 }
 
-.form-container{
+.form-container-login{
     width: 540px;
-    height: 500px;
+    height: 700px;
+    background-color: var(--primary-lighter);
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    outline: solid var(--black-light);
+    text-align: center;
+}
+
+.form-container-signup{
+    width: 540px;
+    height: 800px;
     background-color: var(--primary-lighter);
     margin: 40px auto;
     border-radius: 4px;
@@ -354,6 +365,30 @@ form{
     margin: 0;
 }
 
+.form-line{
+    outline: solid #0e0e0e;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.form-special-login{
+    display: block;
+    margin: auto;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+.form-special-login:hover{
+    opacity: 0.7;
+}
+
+.form-special-login-container{
+    padding-top: 60px;
+}
+
 .input-title{
     display: flex;
     flex: 1;
@@ -361,11 +396,12 @@ form{
     margin: 0;
     padding-top: 20px;
 }
+
 .input-box{
     width: 85%;
 }
 
-.login-button{
+.form-button{
     width: 120px;   
     height: 50px;
     background-color: var(--secondary-1);
