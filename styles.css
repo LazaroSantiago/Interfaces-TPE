@@ -61,6 +61,7 @@ p{
     font-weight: normal;
     font-size: 14px;  
     color: var(--white);
+    text-shadow: var(--text-shadow);
 }
 
 h1{
@@ -187,7 +188,7 @@ footer{
     height: 60px;
     width: 60px;
 }
-.cart{
+.cart-button{
     height: 45px;
     width: 45px;
     margin-right: 15px;
@@ -269,19 +270,20 @@ footer{
 }
 
 .sidebar{
+    display: none;
+    
     background-color: var(--secondary-1);
 
-    display: none;
 
     position: absolute;
     
     height: 100%;
     
-    top: 0;
+    top: 60px;
     left: 0;
     z-index: 0;
     overflow-x: hidden;
-    width: 60px;
+    width: 300px;
     
     align-items: center;
     align-content: center;
@@ -334,6 +336,88 @@ form{
     background-color: var(--secondary-1);
     border-radius: 4px;
     margin-top: 100px;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.cart-menu{
+    display: none;
+    width: 500px;
+    border: 1px solid var(--black);
+    box-shadow: 4px 6px 4px var(--black-light);
+    z-index: 4;
+    position: absolute;
+    top: 60px;
+    right:60px;
+    background-color: var(--primary-light);
+}
+
+
+.cart-info {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-lighter);
+}
+
+.cart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    border-top:1px solid var(--black);
+    padding: 5px 10px;
+    
+}
+
+.checkout{
+    display: flex;
+    align-items: center;
+}
+
+.checkout-button{
+    margin: 5px;
+    text-align: center;
+    background-color: var(--store);
+    border-radius: 3px;
+    box-shadow: var(--shadow-subtle);
+    border: none;
+    margin-left: 1vw;
+}
+
+.cart-game-image{
+ 
+}
+
+.cart-game-title{
+    flex-grow: 2;
+    padding-left: 5px;
+}
+
+.visible{
+    display: block;
 }
 
 /* IDs */
