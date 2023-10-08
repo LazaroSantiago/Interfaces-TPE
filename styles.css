@@ -149,6 +149,7 @@ footer{
     padding-left: 2px;
     padding-bottom: 2px;
     border: none;
+    cursor: pointer;
 }
 
 .cart-card:hover{
@@ -188,6 +189,11 @@ footer{
     height: 60px;
     width: 60px;
 }
+
+.hamburger:hover, .checkout-button:hover, .login:hover, .logo-button:hover, .magnifying-glass:hover, .cart-button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
 .cart-button{
     height: 45px;
     width: 45px;
@@ -208,8 +214,28 @@ footer{
     text-decoration: none;
 }
 
+.footer-logo{
+    height: 100px;
+    margin-left: 75px;
+    width: 100px;
+    margin-top: 20px;
+}
+
 .logo:hover {
     color: var(--black-light);
+}
+
+.sidebar-image{
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+.sidebar-text{
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: "Roobert", "Inter", Arial, Helvetica, sans-serif;
 }
 
 .logo-holder{
@@ -223,6 +249,12 @@ footer{
 .nav-left-container{
     display: flex;
     min-width: 120px;
+}
+
+.nav-right-container{
+    display: flex;
+    min-width: 120px;
+    flex-direction: row-reverse;
 }
 
 .search-bar{
@@ -249,7 +281,7 @@ footer{
 
 .magnifying-glass{
     margin-left: auto;
-    margin-right: 5px;
+    margin-right: 10px;
     width: 30px;
     height: 30px;
     background: none;
@@ -272,10 +304,10 @@ footer{
 
 .sidebar{
     display: none;
-    
+    min-height: 1200px;
     background-color: var(--secondary-1);
 
-
+    padding-right: 20px;
     position: absolute;
     
     
@@ -349,10 +381,10 @@ form{
     text-align: left;
 }
 
-.logo {
+/* .logo {
     max-width: 100%;
     height: auto;
-}
+} */
 
 .cart-menu{
     display: none;
@@ -368,7 +400,8 @@ form{
 
 
 .cart-info {
-    padding: 0 10px;
+    padding: 0 5px;
+    padding-left: 10px;
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-lighter);
@@ -387,7 +420,7 @@ form{
     align-items: center;
     width: auto;
     border-top:1px solid var(--black);
-    padding: 5px 10px;
+    padding: 5px 5px;
     
 }
 
@@ -407,7 +440,9 @@ form{
 }
 
 .cart-game-image{
- 
+    display: block;
+    width: 135px;
+    height: 60px;
 }
 
 .cart-game-title{
@@ -423,13 +458,19 @@ form{
     display: flex;
     flex-direction: column;
     padding-left: 0.5vw;
-    padding-right: 2vw;
+    margin-top: 10px;
+    padding-left: 0px;
 }
 
-.categorie{
+.category{
     display: flex;
     flex-flow: space-between;
     gap: 1vw;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.category:hover{
+    opacity: 0.7;
 }
 
 /* IDs */
