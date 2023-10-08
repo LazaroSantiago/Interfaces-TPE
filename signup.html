@@ -8,11 +8,11 @@
     <title>Hako Games</title>
   </head>
 
-  <body>
+  <body class="body-main">
     <nav class="nav-bar">
         
       <div class="nav-left-container">
-          <img src="images\logo.png"></img>
+        <img class="logo-button" src="images\logo.png"></img>
       </div>
       
       <article class="search-bar">
@@ -21,17 +21,20 @@
       </article>
 
 
-      <div class="nav-right-container">
-        <img src="images\user_icon_logged_out.png" class="login"></img>
-      </div>
+        <div class="nav-right-container">
+            <img src="images\user_icon_logged_out.png" class="login"></img>
+        </div>
   </nav>
 
     <main>
         <article class="form-container-signup">
-            <h1 class="form-title">Log In</h1>
+            <h1 class="form-title-signup">Sign Up</h1>
 
             <form>
-                <h2 class="input-title">Username:</h2>
+                <h2 class="input-title">Email:</h2>
+                <input class="input-box" type="text" >
+                
+                <h2 class="input-title">Nickname:</h2>
                 <input class="input-box" type="text" >
 
                 <h2 class="input-title">Password:</h2>
@@ -39,25 +42,37 @@
 
                 <h2 class="input-title">Repeat Password:</h2>
                 <input class="input-box" type="text" >
-
-                <h2 class="input-title">First Name:</h2>
-                <input class="input-box" type="text" >
-
-                <h2 class="input-title">Last Name:</h2>
-                <input class="input-box" type="text" >
+                
+                <div class="form-full-name">
+                    <div>
+                        <h2 class="input-title">First Name:</h2>
+                        <input class="input-box" type="text" >
+                    </div>
+                    <div>
+                        <h2 class="input-title">Last Name:</h2>
+                        <input class="input-box" type="text" >
+                    </div>
+                </div>
 
                 <h2 class="input-title">Birthdate:</h2>
-                <input class="input-box" type="text" >
-
-                <h2 class="input-title">Password:</h2>
-                <input class="input-box" type="text" >
+                <input class="input-box" type="text" placeholder="DD/MM/YYYY">
 
             </form>
-            <button class="form-button"><p class="form-button-text">Login</p></button>
-        </div>
+            
+            <img class="captcha" src="images\signup\reCAPTCHA v2 checkbox.png">
+
+            <button class="form-button-signup"><p class="form--text">Sign Up</p></button>
+
+
+            <div class="form-line"></div>
+                
+            <div class="form-special-signup-container">
+                <img src="images\signup\signup_facebook.png" class="form-special-login">
+                <img src="images\signup\signup_google.png" class="form-special-login">
+            </div>
+        </article>
     </main>
 
-<!-- placeholder="password" -->
     <footer>
       <div class="footer-columns">
           <div class="footer-column">
