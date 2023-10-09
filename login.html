@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" href="styles.css" />
     <title>Hako Games</title>
+
   </head>
 
   <body>
@@ -26,6 +27,17 @@
       </div>
     </nav>
 
+
+    <section id="loading-screen" class="loading-screen invisible">
+      <h2>Loading...</h2>
+      <div>
+        <h2 id="number">00</h2><h2>%</h2>
+      </div>
+      <div class="spinner-conteiner">
+        <div id="spinner" class="spinner"></div>
+      </div>
+    </section>
+
     <main class="form-main">
         <article class="form-container-login">
             <h1 class="form-title">Log In</h1>
@@ -38,12 +50,12 @@
                 <input class="input-box" type="text" placeholder="●●●●●">
             </form>
 
-            <button class="form-button"><p class="form-button-text">Login</p></button>
+            <button class="form-button loading-button"><p class="form-button-text">Login</p></button>
 
             <div class="form-line"></div>
             <div class="form-special-login-container">
-                <img src="images\login\login_facebook.png" class="form-special-login">
-                <img src="images\login\login_google.png" class="form-special-login">
+                <img src="images\login\login_facebook.png" class="form-special-login loading-button">
+                <img src="images\login\login_google.png" class="form-special-login loading-button">
             </div>
         </article>
     </main>
@@ -92,5 +104,7 @@
           </div>
       </div>
   </footer>
+
+  <script src="loading.js"></script>
   </body>
 </html>
