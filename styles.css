@@ -260,6 +260,7 @@ footer{
     width: 60px;
     display: block;
     z-index: 1;
+    padding-right: 20px;
 }
 
 .sidebar-text{
@@ -331,6 +332,8 @@ footer{
     background-color: var(--primary-light);
     overflow: hidden;
     align-items: center;
+
+
 }
 
 .sidebar{
@@ -341,7 +344,6 @@ footer{
     padding-right: 20px;
     position: absolute;
 
-    
     top: 60px;
     left: 0;
     z-index: 1;
@@ -492,6 +494,12 @@ div > .input-box{
     text-align: left;
 }
 
+.footer-column-logo{
+    flex: 1;
+    padding: 10px 0px 10px 10px;
+    text-align: left;
+}
+
 /* .logo {
     max-width: 100%;
     height: auto;
@@ -609,3 +617,82 @@ div > .input-box{
 }
 
 /* IDs */
+
+/* Media Queries */
+.footer-mobile{
+    visibility: hidden;
+}
+
+@media (max-width: 480px){
+    .row-container{
+        margin-top: 4rem;
+    }
+
+    .footer-mobile{
+        padding-bottom: 1rem;
+        margin-bottom: -20px;
+        display: block;
+    }
+
+    .footer-desktop{
+        visibility: hidden;
+        bottom: 0;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .sidebar{
+        position: fixed;
+    }
+
+    .sidebar-image{
+        height: 2rem;
+        width: 60px;
+    }
+
+    .footer-column {
+        padding: 0;
+        text-align: center;
+        max-height: 30px;
+    }
+
+    .footer-column-logo {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .footer-column > p{
+        visibility: hidden;
+        position: absolute;
+        font-size: 0;
+    }
+
+    .footer-logo {
+        height: 75px;
+        width: 75px;
+        margin-left: 75px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .category > h2{
+        margin: auto;
+    }
+
+    .cart-button{
+        margin-right: 0px;
+    }
+
+    .footer{
+        padding-bottom: 5px;
+    }
+}
