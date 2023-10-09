@@ -56,12 +56,16 @@ h1,h2{
     text-shadow: var(--text-shadow); 
 }
 
+nav{
+    box-shadow: var(--shadow-subtle);
+}
+
 p{
     font-family: Montserrat, Arial, Helvetica, sans-serif; 
     font-weight: normal;
     font-size: 14px;  
     color: var(--white);
-    text-shadow: var(--text-shadow);
+    /* text-shadow: var(--text-shadow); */
 }
 
 h1{
@@ -80,6 +84,7 @@ body{
     margin: 0;
     position: relative;
     min-height: 100vh;
+    scrollbar-gutter: stable;
 }
 
 .body-main{
@@ -104,26 +109,30 @@ footer{
 
 /* classes */
 .row-container{
-    margin-left: 35px;
+    margin-left: 20px;
     padding-left: 10px;
 }
 .wrapper{
+    margin-top: 0px;
     overflow-x: scroll;
     overflow: auto;
     display: flex;
     flex: 1 1 0px;
     flex-flow: row nowrap;
     height: 225px;
-
+    scrollbar-width:thin;
+    scrollbar-color: var(--secondary-1-lighter) var(--black-light);
     /* el borde es mas para saber las dimensiones del row */
     padding: 0;
-    border: 1px solid;
+    padding-top: 20px;
+
     min-width: 0;
     list-style: none;
 }
 
 .row-title{
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    margin-bottom: 0;
 }
 
 .card{
@@ -131,7 +140,7 @@ footer{
     width: 256px;
     margin-right: 42px;
     min-width: 0;
-
+    position: relative;
     background-color: var(--secondary-2);
     box-shadow: var(--shadow);
 
@@ -142,6 +151,7 @@ footer{
     flex-basis: 256px;
 
     list-style: none;
+    z-index: 0;
 }
 
 .cart-card{
@@ -159,7 +169,20 @@ footer{
     cursor: pointer;
 }
 
-.cart-card:hover{
+
+.launch-button{
+    margin-left: 8px;
+    background-color: var(--store);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: var(--black);
+}
+
+.cart-card:hover, .launch-button:hover{
     background-color: var(--store-light);
     box-shadow: none;
 }
@@ -180,7 +203,7 @@ footer{
     margin-bottom: 18px;
     margin-top: 12px;
     font-size: 14px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .card-bottom-row{
@@ -236,6 +259,7 @@ footer{
     height: 60px;
     width: 60px;
     display: block;
+    z-index: 1;
 }
 
 .sidebar-text{
@@ -316,11 +340,11 @@ footer{
 
     padding-right: 20px;
     position: absolute;
-    
+
     
     top: 60px;
     left: 0;
-    z-index: 0;
+    z-index: 1;
     overflow-x: hidden;
     
     align-items: center;
@@ -481,10 +505,12 @@ div > .input-box{
     z-index: 4;
     position: absolute;
     top: 60px;
-    right:60px;
+    right: 0;
     background-color: var(--primary-light);
 }
-
+.cart-item > p{
+    margin-right: 10px;
+}
 
 .cart-info {
     padding: 0 5px;
@@ -539,6 +565,7 @@ div > .input-box{
 
 .visible{
     display: block;
+    box-shadow: var(--shadow);
 }
 
 .categories{
@@ -556,8 +583,29 @@ div > .input-box{
     margin-bottom: 10px;
     cursor: pointer;
 }
+
 .category:hover{
     opacity: 0.7;
+}
+
+.tooltip {
+	display: flex;
+	position: absolute;
+	left: 10px;
+	top: -8px;
+	z-index: 2;
+	width: 90px;
+	height: 25px;
+	background-color: #7cc214;
+	text-transform: uppercase;
+	/* visibility: hidden; */
+}
+
+.tooltip-text{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    color: var(--black);
 }
 
 /* IDs */
